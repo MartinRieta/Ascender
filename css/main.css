@@ -1,0 +1,8 @@
+.nav-item {
+    transition: all .3s ease-in-out;    
+}
+
+.nav-item:hover {
+    background-color: #776228f0;
+    color: aliceblue;
+}
