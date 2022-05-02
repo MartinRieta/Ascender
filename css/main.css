@@ -7,3 +7,12 @@
     color: aliceblue;
 }
 
+.home-footer {
+    display: flex;
+    align-items: flex-end;
+    padding-top: 20px;
+    padding-left: 15px;
+}
+.home-footer p {
+    font-size: 10px;
+}
