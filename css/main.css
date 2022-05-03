@@ -1,3 +1,9 @@
+/*ESTILOS PROPIOS*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: #ffe3cc;
 }
@@ -16,21 +22,137 @@ body {
     height: 75vh;
 }
 
-.table-responsive {
-    margin: 10px;
-    margin-top: 50px;
-    margin-bottom: 40px;
+.grilla {
+    display: grid;
+    grid-template-areas: 
+    "index-header"
+    "home-main"
+    "home-footer";
 }
 
-.home-footer {
+.index-header{
+    margin-top: 10px;
     display: flex;
-    align-items: flex-end;
-    padding-top: 20px;
-    padding-left: 15px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
-.home-footer p {
-    font-size: 10px;
+
+.index-header h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: #e02b14;
+    border-style: double;
+    border-color: black;
+    border-radius: 10px;
+    border-width: 5px; 
+    width: 300px;
 }
+
+.index-header h2 {
+    width: 300px;
+    font-size: 20px;
+}
+
+.home-main img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+}
+
+.home-footer p {   
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 300px;
+    font-size: 10px; 
+}
+
+
+/*QUERIES INDEX*/
+
+@media screen and (min-width: 425px) {
+
+
+.index-header h1 {
+    font-size: 35px;
+    width: 400px;
+}
+
+.index-header h2 {
+    width: 400px;
+}
+    
+.home-main img{
+    width: 400px;
+}
+
+.home-footer p{
+    width: 400px;
+    font-size: 12px;     
+}
+}
+
+@media screen and (min-width: 545px) {
+
+.index-header h1 {
+    font-size: 40px;
+    width: 500px;
+}
+    
+.index-header h2 {
+    font-size: 25px;
+    width: 500px;
+}
+        
+.home-main img{
+    width: 500px;
+}
+    
+.home-footer p{
+    width: 500px;   
+}
+}
+
+@media screen and (min-width: 768px) {
+
+.index-header h1 {
+    font-size: 45px;
+    width: 700px;
+}
+    
+.index-header h2 {
+    font-size: 28px;
+    width: 700px;
+}
+    
+.home-main img{
+    width: 700px;
+}
+    
+.home-footer p{
+    width: 700px;   
+}
+}
+
+@media screen and (min-width: 1024px) {
+
+.index-header h1 {
+    font-size: 50px;
+    width: 900px;
+}        
+
+
+        
+.home-footer p{
+    width: 900px;   
+}
+}
+
 
 
 /*Estilo de mis paginas secundarias*/
@@ -49,6 +171,12 @@ body {
 .secondary-subtitle {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 20px;
+}
+
+.table-responsive {
+    margin: 10px;
+    margin-top: 50px;
+    margin-bottom: 40px;
 }
 
 h3 {
